@@ -2,12 +2,12 @@
 
 ### Table of Contents
 - [Installation](#installation)
-	- [1. Add Library with Cocoapods](#1.-Add-Library-with-Cocoapods)
-	- [2. Project Settings](#2.-Project-Settings)
-		- [Enable Bluetooth Background Mode](#Enable-Bluetooth)
-		- [Define Location User Permission Description](#Define-Location-User-Permission-Description)
-	- [3. Important: Manage User Permission Authorizations in your Application](#3.-Important:-Manage-User-Permission-Authorizations-in-your-Application)
-	- [4. Source Code to start the monitoring](#4.-Source-Code-to-start-the-monitoring)
+	- [1. Add Library with Cocoapods](#1-add-library-with-cocoapods)
+	- [2. Project Settings](#2-project-settings)
+		- [Enable Bluetooth Background Mode](#enable-bluetooth-background-mode)
+		- [Define Location User Permission Description](#define-location-user-permission-description)
+	- [3. Important: Manage User Permission Authorizations in your Application](#3-important-manage-user-permission-authorizations-in-your-application)
+	- [4. Source Code to start the monitoring](#4-source-code-to-start-the-monitoring)
 - [Sample App](#sample-app)
 
 ## Installation
