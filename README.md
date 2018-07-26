@@ -1,23 +1,30 @@
-# oneupSDK
+# Oneup connect for iOS
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+### Table of Contents
+- [Installation](#installation)
+	- [1. Add Library with Cocoapods](#1.-Add-Library-with-cocoapods)
+	- [2. Manage Required Permissions](#2.-Manage-Required-Permissions)
+- [Sample App](#sample-app)
 
 ## Installation
 
-### 1. Add Library with cocoapods
-oneupSDK is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### 1. Add Library with Cocoapods
 
-```ruby
-pod 'oneupSDK'
+Get [Cocoapods](https://cocoapods.org/) and add the pod to your podfile.
+
+```
+pod 'oneupconnectSDK'
 ```
 
+run
 
-### 2. Enable Bluetooth Background Mode
+```
+pod install
+```
+
+### 2. Project Settings
+
+#### Enable Bluetooth Background Mode
 
 To allow the app to run in the background when in range of beacons, we need to enable the Bluetooth Background Mode in our Xcode project.
 
@@ -27,7 +34,7 @@ To allow the app to run in the background when in range of beacons, we need to e
 
 ![background-mode.png](Documents/background-mode.png)
 
-### 3. Define Location User Permission Description
+#### Define Location User Permission Description
 
 In the project navigator, find the Info.plist file, right click on it, and select “Open As”, “Source Code”. Then, inside the top-level <dict> section, add:
 
@@ -44,11 +51,32 @@ In the project navigator, find the Info.plist file, right click on it, and selec
 	<string>We'll show you cool things near you in the app. With the "always" option,
 	we can also alert you via notifications if you don't have the app open.</string>
 
+### 3. Important: Manage User Permission Authorizations in your Application
 
-## Author
+To be able to work correctly, the user must have: 
 
-Solutions Marketing OneUp Inc.
+ - the bluethooth turned ON
+ - allowed the Location permision with "Always Allow"
 
-## License
+You have to validate them and include screen/dialog to inform and suggest the users to enable them as often as possible.
 
-oneupSDK is available under the MIT license. See the LICENSE file for more info.
+### 4. Source Code to start the monitoring
+
+Include this code to start the monitoring:
+
+
+```
+#import <oneupconnectSDK/OUManager.h>
+
+...
+
+OUManager *ouManager = [OUManager new];
+[OUManager setAppToken:@"YOUR_API_KEY"];
+[ouManager startMonitoring];
+
+```
+
+
+## Sample App
+
+To run the example project, clone the repo, and run `pod install` from the Example directory.
