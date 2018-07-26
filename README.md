@@ -2,7 +2,7 @@
 
 ### Table of Contents
 - [Installation](#installation)
-	- [1. Add Library with Cocoapods](#1. Add Library with Cocoapods)
+	- [1. Add Library with Cocoapods](#1.-Add-Library-with-Cocoapods)
 	- [2. Project Settings](#2.-Project-Settings)
 		- [Enable Bluetooth Background Mode](#Enable-Bluetooth)
 		- [Define Location User Permission Description](#Define-Location-User-Permission-Description)
